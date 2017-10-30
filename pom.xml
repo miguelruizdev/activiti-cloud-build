@@ -222,6 +222,11 @@
       </dependency>
       <dependency>
         <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-services-core</artifactId>
+        <version>${version.activiti.cloud}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-services-events</artifactId>
         <version>${version.activiti.cloud}</version>
       </dependency>
@@ -268,7 +273,7 @@
         <version>${version.activiti.cloud}</version>
       </dependency>
 
-      <!-- Activiti Cloud Query Services -->
+      <!-- Activiti Cloud Audit Services -->
       <dependency>
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-services-audit-parent</artifactId>
@@ -317,6 +322,14 @@
         <version>${version.activiti.cloud}</version>
         <scope>test</scope>
       </dependency>
+
+      <!-- Activiti Cloud Connectors -->
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-connectors-starter</artifactId>
+        <version>${version.activiti.cloud}</version>
+      </dependency>
+
       <!-- Spring Boot / Cloud / Stream dependencies -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
