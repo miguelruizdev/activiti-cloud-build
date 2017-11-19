@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.activiti.cloud</groupId>
     <artifactId>activiti-cloud-parent</artifactId>
-    <version>7-201711-EA-SNAPSHOT</version>
+    <version>7-201711-EA-salaboy__1566_tx__for__integration__events-SNAPSHOT</version>
   </parent>
 
   <artifactId>activiti-cloud-service-common-dependencies</artifactId>
