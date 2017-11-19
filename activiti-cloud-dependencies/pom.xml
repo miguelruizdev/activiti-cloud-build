@@ -13,6 +13,13 @@
   <name>Activiti Cloud Dependencies - BOM (Bill Of Materials)</name>
   <description>Activiti Cloud Dependencies - BOM(Bill Of Materials)</description>
 
+  <properties>
+    <!-- Spring Boot / Cloud / Stream deps -->
+    <spring.boot.version>2.0.0.M5</spring.boot.version>
+    <spring.cloud.version>Finchley.M3</spring.cloud.version>
+    <spring.cloud.stream.version>Ditmars.RELEASE</spring.cloud.stream.version>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
