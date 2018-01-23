@@ -16,6 +16,7 @@
     <version.activiti.cloud.runtime-bundle>${version.activiti.cloud}</version.activiti.cloud.runtime-bundle>
     <version.activiti.cloud.audit>${version.activiti.cloud}</version.activiti.cloud.audit>
     <version.activiti.cloud.query>${version.activiti.cloud}</version.activiti.cloud.query>
+    <version.activiti.cloud.notifications>${version.activiti.cloud}</version.activiti.cloud.notifications>
     <version.activiti.cloud.connectors>${version.activiti.cloud}</version.activiti.cloud.connectors>
     <version.activiti.cloud.process-model>${version.activiti.cloud}</version.activiti.cloud.process-model>
     <version.activiti.cloud.org>${version.activiti.cloud}</version.activiti.cloud.org>
@@ -40,6 +41,7 @@
     <docker.rabbitmq.start.timeout>15000</docker.rabbitmq.start.timeout>
 
     <!-- GRAPHQL Java Lib + Schema Generation -->
+    <graphql-java.version>6.0</graphql-java.version>
     <graphql.jpa-query.version>0.3.1</graphql.jpa-query.version>
 
     <!-- using hibernate and JPA for the services -->
@@ -117,6 +119,7 @@
     <module>activiti-cloud-service-common-dependencies</module>
     <module>activiti-cloud-runtime-bundle-dependencies</module>
     <module>activiti-cloud-query-dependencies</module>
+    <module>activiti-cloud-notifications-dependencies</module>
     <module>activiti-cloud-audit-dependencies</module>
     <module>activiti-cloud-connectors-dependencies</module>
     <module>activiti-cloud-process-model-dependencies</module>
@@ -297,21 +300,6 @@
       </dependency>
       <dependency>
         <groupId>org.activiti.cloud</groupId>
-        <artifactId>activiti-cloud-services-query-notifications</artifactId>
-        <version>${version.activiti.cloud.query}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti.cloud</groupId>
-        <artifactId>activiti-cloud-services-query-graphql-ws</artifactId>
-        <version>${version.activiti.cloud.query}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti.cloud</groupId>
-        <artifactId>activiti-cloud-services-query-stomp</artifactId>
-        <version>${version.activiti.cloud.query}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-services-query-graphiql</artifactId>
         <version>${version.activiti.cloud.query}</version>
       </dependency>
@@ -320,6 +308,33 @@
         <groupId>org.activiti.cloud</groupId>
         <artifactId>activiti-cloud-starter-query</artifactId>
         <version>${version.activiti.cloud.query}</version>
+      </dependency>
+
+      <!-- Activiti Cloud Notifications Services -->
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-services-notifications</artifactId>
+        <version>${version.activiti.cloud.notifications}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-services-notifications-core</artifactId>
+        <version>${version.activiti.cloud.notifications}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-services-notifications-graphql-ws</artifactId>
+        <version>${version.activiti.cloud.notifications}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-services-notifications-stomp</artifactId>
+        <version>${version.activiti.cloud.notifications}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud</groupId>
+        <artifactId>activiti-cloud-starter-notifications</artifactId>
+        <version>${version.activiti.cloud.notifications}</version>
       </dependency>
 
       <!-- Activiti Cloud Audit Services -->
@@ -455,6 +470,12 @@
       </dependency>
 
       <!-- GRAPH QL Java + Schema Generation -->
+      <dependency>
+        <groupId>com.graphql-java</groupId>
+        <artifactId>graphql-java</artifactId>
+        <version>${graphql-java.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>com.introproventures</groupId>
         <artifactId>graphql-jpa-query-schema</artifactId>
